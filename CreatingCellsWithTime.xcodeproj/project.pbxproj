@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2773BA2B2A33F25C0085F3E9 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773BA2A2A33F25C0085F3E9 /* EventModel.swift */; };
+		2773BA2F2A340DB00085F3E9 /* InitialTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773BA2E2A340DB00085F3E9 /* InitialTabBarController.swift */; };
 		27B73F952A33BEF00080C039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B73F942A33BEF00080C039 /* AppDelegate.swift */; };
 		27B73F972A33BEF00080C039 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B73F962A33BEF00080C039 /* SceneDelegate.swift */; };
 		27B73F992A33BEF00080C039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B73F982A33BEF00080C039 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		2773BA2A2A33F25C0085F3E9 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		2773BA2E2A340DB00085F3E9 /* InitialTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTabBarController.swift; sourceTree = "<group>"; };
 		27B73F912A33BEF00080C039 /* CreatingCellsWithTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreatingCellsWithTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B73F942A33BEF00080C039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27B73F962A33BEF00080C039 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				27B73FC72A33C23C0080C039 /* cells */,
 				27B73F982A33BEF00080C039 /* ViewController.swift */,
+				2773BA2E2A340DB00085F3E9 /* InitialTabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				27B73FC92A33C28C0080C039 /* DetailCellWithTLeftTime.swift in Sources */,
 				27B73F952A33BEF00080C039 /* AppDelegate.swift in Sources */,
 				2773BA2B2A33F25C0085F3E9 /* EventModel.swift in Sources */,
+				2773BA2F2A340DB00085F3E9 /* InitialTabBarController.swift in Sources */,
 				27B73F972A33BEF00080C039 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
