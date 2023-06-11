@@ -20,18 +20,17 @@ class InitialTabBarController: UITabBarController {
     
     func configureTab(){
         let vc1 = UINavigationController(rootViewController: ViewController())
-        let vc2 = UINavigationController(rootViewController: SecondViewController())
-        let vc = self
         vc1.title = "Agenda"
         vc1.tabBarItem.image = UIImage(systemName: "calendar")
+        let vc2 = UINavigationController(rootViewController: SecondViewController())
         vc2.title = "Configurações"
         vc2.tabBarItem.image = UIImage(systemName: "gear")
+        
         self.setViewControllers([vc1,vc2], animated: false)
     }
-
 }
 
 
 class SecondViewController: UIViewController {
-    
+    // JUST CREATED FOR FILL TABBAR
 }

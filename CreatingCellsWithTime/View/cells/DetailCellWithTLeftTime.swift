@@ -67,6 +67,7 @@ class DetailCellWithTLeftTime: UITableViewCell {
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
+    
     let eventDetailTextLabel: UILabel = {
         let text = UILabel()
         text.textColor = .secondaryLabel
@@ -77,10 +78,8 @@ class DetailCellWithTLeftTime: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        
         setupUI()
         configureConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -96,13 +95,10 @@ class DetailCellWithTLeftTime: UITableViewCell {
         cardViewBackground.addSubview(eventTextLabel)
         cardViewBackground.addSubview(eventDetailTextLabel)
         circleAvatar.addSubview(avatarImg)
-        
-        
-        
     }
+    
     private func configureConstraints(){
         NSLayoutConstraint.activate([
-//            leftTextLabel.topAnchor.constraint(equalTo: topAnchor),
             leftTextLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
             leftTextLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
             

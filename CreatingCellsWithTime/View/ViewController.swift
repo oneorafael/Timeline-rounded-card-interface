@@ -8,6 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let eventList: [EventModel] = [
+        EventModel(title: "Daily", timeInitial: "08:30", timeDetail: "08:30 - 08:45 am", timeAMorPM: "AM", Color: UIColor.red, img: UIImage(resource: .dev)),
+        EventModel(title: "Reunião com Time de Design", timeInitial: "10:00", timeDetail: "10:00 - 10:30 am", timeAMorPM: "AM", Color: UIColor.purple, img: UIImage(resource: .thinking)),
+        EventModel(title: "Reunião com Thiago", timeInitial: "11:20", timeDetail: "11:20 - 12:00 pm", timeAMorPM: "PM", Color: UIColor.purple, img:UIImage(resource: .avatar)),
+        EventModel(title: "Encontro com o comitê", timeInitial: "14:00", timeDetail: "14:00 - 16:00 pm", timeAMorPM: "PM", Color: UIColor.systemYellow, img: UIImage(resource: .thinking)),
+        EventModel(title: "Fim do Expediente", timeInitial: "17:00", timeDetail: "17:00 - 08:00 pm", timeAMorPM: "PM", Color: UIColor.green, img: UIImage(resource: .ghost)),
+    ]
+
     let table: UITableView = {
         let table = UITableView()
         table.register(DetailCellWithTLeftTime.self, forCellReuseIdentifier: "cell")
@@ -16,14 +24,6 @@ class ViewController: UIViewController {
         return table
     }()
     
-    let eventList: [EventModel] = [
-        EventModel(title: "Daily", timeInitial: "08:30", timeDetail: "08:30 - 08:45 am", timeAMorPM: "AM", Color: UIColor.red, img: UIImage(resource: .dev)),
-        EventModel(title: "Reunião com Time de Design", timeInitial: "10:00", timeDetail: "10:00 - 10:30 am", timeAMorPM: "AM", Color: UIColor.purple, img: UIImage(resource: .thinking)),
-        EventModel(title: "Reunião com Thiago", timeInitial: "11:20", timeDetail: "11:20 - 12:00 pm", timeAMorPM: "PM", Color: UIColor.purple, img:UIImage(resource: .avatar)),
-        EventModel(title: "Encontro com o comitê", timeInitial: "14:00", timeDetail: "14:00 - 16:00 pm", timeAMorPM: "PM", Color: UIColor.systemYellow, img: UIImage(resource: .thinking)),
-        EventModel(title: "Fim do Expediente", timeInitial: "17:00", timeDetail: "17:00 - 08:00 pm", timeAMorPM: "PM", Color: UIColor.green, img: UIImage(resource: .ghost)),
-        
-    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -49,7 +49,6 @@ class ViewController: UIViewController {
         ])
     }
 }
-
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource  {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
