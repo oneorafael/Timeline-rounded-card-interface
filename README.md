@@ -1,2 +1,3 @@
 # agenda-card-rounded-interface
-![IMG_02DC2E0320C0-1](https://github.com/oneorafael/agenda-card-rounded-interface/assets/26628994/d42b4860-390b-4d93-a6a6-1d037e25c8e4)
+
+![IMG_0165](https://github.com/oneorafael/agenda-card-rounded-interface/assets/26628994/7a9867b7-e132-4418-92b6-3663642fe09a)
